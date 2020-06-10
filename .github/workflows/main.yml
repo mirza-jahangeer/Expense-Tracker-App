@@ -39,4 +39,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Deploy to Surge
-      run: surge ./build ExpenseTracker.surge.su ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build ExpenseTracker.surge.su --token ${{ secrets.SURGE_TOKEN }}
