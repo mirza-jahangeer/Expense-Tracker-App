@@ -2,25 +2,27 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// function App() {
+//   return (
+//     <div className="App">
+      
+//     </div>
+//   );
+// }
+
+function Hi(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+      <div className="hi">
+          <h1><strong>Mirza Jahangeer  {props.work} {props.age -3} </strong></h1>
+          <ul>
+            <li>React Assignment</li>
+            <li>SPM Assignment</li>
+            <li>Bootstrap Assignment</li>
+          </ul>
+
+        </div>
+  )
 }
 
-export default App;
+export default Hi;
